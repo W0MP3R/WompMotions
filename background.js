@@ -22,7 +22,10 @@
         ugh: new Emotion('ugh', "https://i.imgur.com/WVbanvL.jpg"),
         sleep: new Emotion('sleep', "https://i.imgur.com/wa74uAK.jpg"),
         frustration: new Emotion('frustration', "https://i.imgur.com/BJBHlDr.jpg"),      
-        bored: new Emotion('bored', "https://i.imgur.com/5DNrFK7.png")
+        bored: new Emotion('bored', "https://i.imgur.com/5DNrFK7.png"),      
+        dancedance: new Emotion('dancedance', "~(-.-~)"),      
+        pepelaugh: new Emotion('pepelaugh', "https://i.redd.it/isrzbgp0evn21.png"),
+        mejoke: new Emotion('mejoke', "http://9buz.com/content/uploads/images/September2014/9buz_the_joke_me.jpg")
         //TODO
         /*
         shruggie
