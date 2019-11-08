@@ -4,7 +4,7 @@
       this.message = message
     }
   
-    /*var emotions = {
+    var emotions = {
       notfunny: new Emotion('notfunny', "https://i.imgur.com/6RKuegb.jpg"),
       cry: new Emotion('cry', "TT^TT"),
       scream: new Emotion('scream', "https://i.imgur.com/myazEMI.jpg"),
@@ -20,38 +20,14 @@
       frustration: new Emotion('frustration', "https://i.imgur.com/BJBHlDr.jpg"),      
       bored: new Emotion('bored', "https://i.imgur.com/5DNrFK7.png"),      
       dancedance: new Emotion('dancedance', "~(-.-~)"),      
-      pepelaugh: new Emotion('pepelaugh', "https://i.redd.it/isrzbgp0evn21.png"),
+      pepeLaugh: new Emotion('pepelaugh', "https://i.redd.it/isrzbgp0evn21.png"),
       mejoke: new Emotion('mejoke', "http://9buz.com/content/uploads/images/September2014/9buz_the_joke_me.jpg")
 
-    };*/
-    var emotions = {
-      cry: new Emotion('cry', "TT^TT"),
-      fixThis: new Emotion('fixthis', ">.<")
-    };   
+    };
+
 
     function findEmotion(_name) {
-      console.log("find Name:" + _name);
-      console.log(Object.prototype.toString.call(emotions));
-      var result = emotions.find(function(element) {
-
-        console.log(element);
-        return element.name == _name;
-      });
-      /*var result = emotions.filter(obj => {
-        console.log("OBJ: " + Object.values(obj));
-        return obj.name == _name
-      })*/
-      //var result = emotions.find(x => x.name === 'cry').name;
-
-      console.log(result);
-      if(result)
-      {
-        return result.name;
-      }
-      else{
-        return undefined;
-      }
-      //return emotions.hasOwnProperty(name) ? emotions[name].message : undefined;
+      return emotions.hasOwnProperty(_name) ? emotions[_name].message : undefined;
     }
 
   
@@ -70,17 +46,13 @@
   
         if (key === 13 && input.value.match(/#{2,}/gi)) { // "Enter"
 
-          var enteredText = input.value.trim().toLowerCase();
-          console.log("Entered text: " + enteredText);
+          var enteredText = input.value.trim();
           var data = enteredText.split(/\s+/);        
-          console.log("data: " + data);
           var emotionName = data.length > 0 ? data[0].substring(2) : '';     
-          console.log("emotionName: " + emotionName);
           e.stopPropagation();
 
           var tempEmotion = findEmotion(emotionName);
-              
-          console.log("tempEmotion: " + tempEmotion);
+
           if(tempEmotion != undefined)
           {
             sendMessage(tempEmotion);
