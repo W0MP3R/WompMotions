@@ -20,3 +20,7 @@ Right now, these are the commands implemented:
 
 ## Adding new pictures
 In case that you want to add new commands/pictures you just need to edit the *background.js* file and add the new line in the list of emotions
+
+
+## How to use the extension
+Right now
