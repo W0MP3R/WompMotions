@@ -20,11 +20,7 @@
       frustration: new Emotion('frustration', "https://i.imgur.com/BJBHlDr.jpg"),      
       bored: new Emotion('bored', "https://i.imgur.com/5DNrFK7.png"),  
       shruggie: new Emotion('shruggie', "https://i.stack.imgur.com/8MXJQ.jpg"),
-      hiya: new Emotion('hiya', "https://i.imgur.com/Llzc0ED.jpg"),    
-      dancedance: new Emotion('dancedance', "~(-.-~)"),      
-      pepeLaugh: new Emotion('pepelaugh', "https://i.redd.it/isrzbgp0evn21.png"),
-      mejoke: new Emotion('mejoke', "http://9buz.com/content/uploads/images/September2014/9buz_the_joke_me.jpg")
-
+      hiya: new Emotion('hiya', "https://i.imgur.com/Llzc0ED.jpg")
     };
 
 
