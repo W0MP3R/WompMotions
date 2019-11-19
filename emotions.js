@@ -58,7 +58,7 @@ function paintEmotions() {
             emotionPic.className = 'emotion-name';
 
             var emotionPicSpan = document.createElement('span');
-            emotionPicSpan.innerHTML = '##' + emotions[i].description;
+            emotionPicSpan.innerHTML = emotions[i].description;
             emotionPic.appendChild(emotionPicSpan);
 
             emotionItemList.appendChild(emotionPic);
