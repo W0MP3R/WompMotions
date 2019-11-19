@@ -3,29 +3,32 @@
       this.name = name
       this.message = message
     }
-  
-    var emotions = {
-      notfunny: new Emotion('notfunny', "https://i.imgur.com/6RKuegb.jpg"),
-      cry: new Emotion('cry', "TT^TT"),
-      scream: new Emotion('scream', "https://i.imgur.com/myazEMI.jpg"),
-      surprise: new Emotion('surprise', "https://i.imgur.com/V5Bgq0u.jpg"),
-      blankface: new Emotion('blankface', "https://i.imgur.com/DhCCvgc.png"),
-      sad: new Emotion('sad', "https://i.imgur.com/5R9wPkp.jpg"),
-      todaypaella: new Emotion('todaypaella', "https://i.imgur.com/VPzhSHo.jpg"),
-      notpaella: new Emotion('notpaella', "https://i.imgur.com/lcmKemN.png"),
-      dance: new Emotion('dance', "https://i.imgur.com/nZta0t8.jpg"),
-      workface: new Emotion('workface', "https://i.imgur.com/9aw7xpn.jpg"),
-      ugh: new Emotion('ugh', "https://i.imgur.com/WVbanvL.jpg"),
-      sleep: new Emotion('sleep', "https://i.imgur.com/wa74uAK.jpg"),
-      frustration: new Emotion('frustration', "https://i.imgur.com/BJBHlDr.jpg"),      
-      bored: new Emotion('bored', "https://i.imgur.com/5DNrFK7.png"),  
-      shruggie: new Emotion('shruggie', "https://i.stack.imgur.com/8MXJQ.jpg"),
-      hiya: new Emotion('hiya', "https://i.imgur.com/Llzc0ED.jpg")
-    };
+
+    var emotions = [
+      new Emotion('notfunny', "https://i.imgur.com/6RKuegb.jpg"),
+      new Emotion('cry', "TT^TT"),
+      new Emotion('scream', "https://i.imgur.com/myazEMI.jpg"),
+      new Emotion('surprise', "https://i.imgur.com/V5Bgq0u.jpg"),
+      new Emotion('blankface', "https://i.imgur.com/DhCCvgc.png"),
+      new Emotion('sad', "https://i.imgur.com/5R9wPkp.jpg"),
+      new Emotion('todaypaella', "https://i.imgur.com/VPzhSHo.jpg"),
+      new Emotion('notpaella', "https://i.imgur.com/lcmKemN.png"),
+      new Emotion('dance', "https://i.imgur.com/nZta0t8.jpg"),
+      new Emotion('workface', "https://i.imgur.com/9aw7xpn.jpg"),
+      new Emotion('ugh', "https://i.imgur.com/WVbanvL.jpg"),
+      new Emotion('sleep', "https://i.imgur.com/wa74uAK.jpg"),
+      new Emotion('frustration', "https://i.imgur.com/BJBHlDr.jpg"),      
+      new Emotion('bored', "https://i.imgur.com/5DNrFK7.png"),  
+      new Emotion('shruggie', "https://i.stack.imgur.com/8MXJQ.jpg"),
+      new Emotion('hiya', "https://i.imgur.com/Llzc0ED.jpg")
+  ];
 
 
     function findEmotion(_name) {
-      return emotions.hasOwnProperty(_name) ? emotions[_name].message : undefined;
+      var result = emotions.find(obj => {
+        return obj.name.toLowerCase() === _name.toLowerCase()
+      });
+      return result.message;
     }
 
   
