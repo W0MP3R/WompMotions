@@ -40,29 +40,24 @@ function paintEmotions() {
 
         emotionItemList.appendChild(emotionName);
 
-        if(emotions[i].isPic == true)
-        {
-            var emotionPic = document.createElement('div');
-            emotionPic.className = 'emotion-pic-wrapper';
+        var emotionPic = document.createElement('div');
+        emotionPic.className = 'emotion-pic-wrapper';
 
+        if(emotions[i].isPic == true)
+        {            
             var emotionPicIMG = document.createElement('img');
             emotionPicIMG.className = 'pics';
             emotionPicIMG.src = emotions[i].description;
             emotionPic.appendChild(emotionPicIMG);
-
-            emotionItemList.appendChild(emotionPic);
         }
         else
         {
-            var emotionPic = document.createElement('div');
-            emotionPic.className = 'emotion-name';
 
             var emotionPicSpan = document.createElement('span');
             emotionPicSpan.innerHTML = emotions[i].description;
             emotionPic.appendChild(emotionPicSpan);
-
-            emotionItemList.appendChild(emotionPic);
         }
+        emotionItemList.appendChild(emotionPic);
         emotionsList.appendChild(emotionItemList);
     }
 }
