@@ -17,6 +17,9 @@ Right now, these are the commands implemented:
 - `##sleep`
 - `##frustration`
 - `##bored`
+- `##shruggie`
+- `##hiya`
+- `##surprise_old`
 
 ## Adding new pictures
 In case that you want to add new commands/pictures you just need to edit the *background.js* file and add the new line in the list of emotions.
