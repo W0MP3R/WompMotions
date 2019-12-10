@@ -7,7 +7,7 @@
     var emotions = [
       new Emotion('notfunny', "https://i.imgur.com/6RKuegb.jpg"),
       new Emotion('cry', "TT^TT", false),
-      new Emotion('scream', "https://i.imgur.com/myazEMI.jpg"),
+      new Emotion('scream', "https://i.imgur.com/XfKv08W.png"),
       new Emotion('surprise', "https://i.imgur.com/gNyGnwB.png"),
       new Emotion('blankface', "https://i.imgur.com/DhCCvgc.png"),
       new Emotion('sad', "https://i.imgur.com/5R9wPkp.jpg"),
@@ -21,7 +21,8 @@
       new Emotion('bored', "https://i.imgur.com/5DNrFK7.png"),  
       new Emotion('shruggie', "https://i.stack.imgur.com/8MXJQ.jpg"),
       new Emotion('hiya', "https://i.imgur.com/Llzc0ED.jpg"),
-      new Emotion('surprise_old', "https://i.imgur.com/V5Bgq0u.jpg")
+      new Emotion('surprise_old', "https://i.imgur.com/V5Bgq0u.jpg"),
+      new Emotion('scream_old', "https://i.imgur.com/myazEMI.jpg")
   ];
 
 
