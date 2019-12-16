@@ -1,5 +1,5 @@
 (function () {   
-    var Emotion = function (name, message) {
+    /*var Emotion = function (name, message) {
       this.name = name
       this.message = message
     }
@@ -21,8 +21,9 @@
       new Emotion('bored', "https://i.imgur.com/5DNrFK7.png"),  
       new Emotion('shruggie', "https://i.stack.imgur.com/8MXJQ.jpg"),
       new Emotion('hiya', "https://i.imgur.com/Llzc0ED.jpg"),
-      new Emotion('surprise_old', "https://i.imgur.com/V5Bgq0u.jpg")
-  ];
+      new Emotion('surprise_old', "https://i.imgur.com/V5Bgq0u.jpg"),
+      new Emotion('scream_old', "https://i.imgur.com/myazEMI.jpg")
+  ];*/
 
 
     function findEmotion(_name) {
